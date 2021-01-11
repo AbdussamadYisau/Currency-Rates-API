@@ -32,3 +32,4 @@ This API serves as a service integration to a [public API](https://api.exchanger
 
 [Deployed here]( https://lit-lake-78126.herokuapp.com/) 
 
+[Screenshot](https://github.com/AbdussamadYisau/EnyeTestAPI/blob/master/assets/Screenshot.png)
