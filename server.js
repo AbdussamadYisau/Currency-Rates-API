@@ -14,6 +14,6 @@ app.use((req,res,next) => {
 
 app.use(apiRoute);
 
-app.listen(8080 || process.env.PORT, () => {
-    console.log(`This application is running on port ${8080 || process.env.PORT} `);
+app.listen(process.env.PORT || 8080, () => {
+    console.log(`This application is running on port ${process.env.PORT || 8080} `);
 });
