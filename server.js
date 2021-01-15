@@ -14,6 +14,18 @@ app.use((req,res,next) => {
 
 app.use(apiRoute);
 
+app.get("/", (req, res) => {
+	// Health Check
+	res.send("The API is up and running.");
+});
+
+app.get("*", (req, res) => {
+	res.status(404).json({
+		error: 404,
+		message: "The resource you requested does not exist."
+	});
+});
+
 app.listen(process.env.PORT || 8080, () => {
     console.log(`This application is running on port ${process.env.PORT || 8080} `);
 });
